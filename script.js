@@ -49,7 +49,7 @@ function addDocument(user) {
                 </div>
               </div>
               <div class="content row">
-                <div class="document display">
+                <div class="document display pt-3">
                   UserName:${user.username}<br />
                   Email:${user.email}<br />
                 </div>
@@ -78,3 +78,20 @@ function addDocument(user) {
 }
 
 getTodo();
+
+function ToDoBtn(id, type) {
+  const types = ["document", "address", "company", "contact"];
+  if (types.includes(type)) {
+    const elements = document.querySelectorAll(`.${type}`);
+    const button = document.querySelectorAll(`.${type}Btn`);
+    if (elements.length > 0 && elements[id - 1]) {
+      if (elements[id - 1].classList.contains("display")) {
+        elements[id - 1].classList.remove("display");
+        button[id - 1].classList.add("display");
+      } else {
+        elements[id - 1].classList.add("display");
+        button[id - 1].classList.remove("display");
+      }
+    }
+  }
+}
