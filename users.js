@@ -25,13 +25,13 @@ function addDocument(user) {
               >
                 <div
                   onclick="ToDoBtn(${user.id},'document')"
-                  class="btn border me-1 personelDocuments"
+                  class="btn border me-1 personalDocuments"
                 >
                   <i class="bi bi-person-circle"></i>
                 </div>
                 <div
                   onclick="ToDoBtn(${user.id},'address')"
-                  class="btn border me-1 personelAddress"
+                  class="btn border me-1 personalAddress"
                 >
                   <i class="bi bi-geo-alt-fill"></i>
                 </div>
@@ -47,6 +47,13 @@ function addDocument(user) {
                 >
                   <i class="bi bi-telephone-fill"></i>
                 </div>
+                <div
+                  
+                  class="btn border me-1"
+                >
+                <a href="posts.html?userId=${user.id}"><i class="bi bi-chat-dots-fill text-dark"></i></a>
+                </div>
+                
               </div>
               <div class="content row">
                 <div class="document display pt-3">
