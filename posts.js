@@ -21,7 +21,7 @@ const result = document.querySelector(".result");
 function resultUsers(user) {
   result.innerHTML += `
   <div class="row justify-content-center align-items-center">
-  <div class="card col-lg-6 col-md-4 text-center mt-4">
+  <div class="card shadow p-3 mb-5  rounded bg-danger text-white shadow-md col-lg-6 col-md-4 text-center mt-3 second">
       <h2><strong>Id</strong>:${user.userId}</h2>
       <h2><strong>Number</strong>:${user.id}</h2>
       <h2><strong>Title</strong>:${user.title}</h2>

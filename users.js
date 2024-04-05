@@ -47,11 +47,11 @@ function addDocument(user) {
                 >
                   <i class="bi bi-telephone-fill"></i>
                 </div>
-                <div
+                <div 
                   
-                  class="btn border me-1"
+                  class=""
                 >
-                <a href="posts.html?userId=${user.id}"><i class="bi bi-chat-dots-fill text-dark"></i></a>
+                <a class="btn border me-1"  href="posts.html?userId=${user.id}"><i class="bi bi-chat-dots-fill text-dark"></i></a>
                 </div>
                 
               </div>

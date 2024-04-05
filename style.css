@@ -16,3 +16,7 @@ body {
 .display {
   display: none;
 }
+
+.second {
+  cursor: pointer;
+}
