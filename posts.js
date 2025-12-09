@@ -4,10 +4,10 @@ console.log(params);
 console.log(useId);
 
 async function fetchUseIdDetails() {
-  const responce = await fetch(
+  const response = await fetch(
     `https://jsonplaceholder.typicode.com/posts?userId=${useId}`
   );
-  const data = await responce.json();
+  const data = await response.json();
   data.forEach((user) => {
     resultUsers(user);
   });

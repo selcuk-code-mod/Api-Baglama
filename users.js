@@ -1,7 +1,7 @@
 async function getTodo() {
-  const responce = await fetch("https://jsonplaceholder.typicode.com/users");
+  const response = await fetch("https://jsonplaceholder.typicode.com/users");
 
-  const data = await responce.json();
+  const data = await response.json();
 
   console.log(data);
 
